@@ -1,0 +1,8 @@
+</td>
+    </tr>
+        <tr>
+    <td id="display_errors_check">Check if <i>display_errors</i> PHP directive is turned off.</td>
+      <td><p>Displaying any kind of debug info or similar information is extremely bad. If any PHP errors happen on your site they should be logged in a safe place and not displayed to visitors or potential attackers.</p>
+      <p>Open <i>wp-config.php</i> and place the following code just above the <i>require_once</i> function at the end of the file:</p>
+      <pre>ini_set('display_errors', 0);</pre>
+      

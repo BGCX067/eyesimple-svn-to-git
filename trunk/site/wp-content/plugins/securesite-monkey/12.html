@@ -1,0 +1,11 @@
+</td>
+    </tr>
+    <tr>
+    <td id="debug_check">Check if site debug mode is enabled.</td>
+      <td><p>Having any kind of debug mode (general WP debug mode in this case) or error reporting mode enabled on a production server is extremely bad. Not only will it slow down your site, confuse your visitors with weird messages it will also give the potential attacker valuable information about your system.</p>
+      <p>General WordPress debugging mode is enabled/disabled by a constant defined in <i>wp-config.php</i>. Open that file and look for a line similar to:</p>
+      <pre>define('WP_DEBUG', true);</pre>
+      <p>Comment it out, delete it or replace with the following to disable debugging:</p>
+      <pre>define('WP_DEBUG', false);</pre>
+      <p>If your blog still fails on this test after you made the changes it means some plugin is enabling debug mode. Disable plugins one by one to find out which one is doing it.</p>
+      

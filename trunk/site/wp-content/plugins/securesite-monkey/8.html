@@ -1,0 +1,12 @@
+</td>
+    </tr>
+
+    <tr>
+    <td id="check_failed_login_info">Check for display of unnecessary information on failed login attempts.</td>
+      <td><p>By default on failed login attempts WordPress will tell you whether username or password is wrong. An attacker can use that to find out which usernames are active on your system and then use brute-force methods to hack the password.</p>
+      <p>Solution to this problem is simple. Whether user enters wrong username or wrong password we always tell him "wrong username or password" so that he doesn't know which of two is wrong. Open your theme's <i>functions.php</i> file and copy/paste the following code:</p>
+      <pre>function wrong_login() {
+  return 'Wrong username or password.';
+}
+add_filter('login_errors', 'wrong_login');</pre>
+      

@@ -1,0 +1,10 @@
+</td>
+    </tr>
+    <tr>
+    <td id="bruteforce_login">Check users password strength with a brute-force attack.</td>
+      <td><p>By using a dictionary of 600 most commonly used passwords Security Monkey does a brute-force attach on your site's user accounts. Any accounts that fail this test pose a serious security issue for the site because they are using passwords like "12345", "qwerty" or "god" which anyone can guess within minutes. Alert those users or change their passwords immediately.</p>
+      <p>Please note that Security Monkey (by default) tests only the first 25 users (starting from administrators). This limit is imposed to be sure we don't kill the DB while doing the brute-force attack.<br />
+      If you want to test more or all users open <i>security-monkey.php</i> and change the line #20 which defines this limit.</p>
+      <pre>// maximum number of user accounts that are brute-force tested for weak passwords
+define('WF_SN_MAX_USERS_ATTACK', 25);</pre>
+      

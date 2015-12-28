@@ -1,0 +1,9 @@
+</td>
+    </tr>
+    <tr>
+    <td id="db_debug_check">Check if database debug mode is enabled.</td>
+      <td><p>Having any kind of debug mode (WP DB debug mode in this case) or error reporting mode enabled on a production server is extremely bad. Not only will it slow down your site, confuse your visitors with weird messages it will also give the potential attacker valuable information about your system.</p>
+      <p>WordPress DB debugging mode is enabled with the following command:</p>
+      <pre>$wpdb-&gt;show_errors();</pre>
+      <p>In most cases this debugging mode is enabled by plugins so the only way to solve the problem is to disable plugins one by one and find out which one enabled debugging.</p>
+      

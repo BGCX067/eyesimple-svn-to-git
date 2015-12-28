@@ -1,0 +1,17 @@
+</td>
+    </tr>
+    <tr>
+    <td id="salt_keys_check">Check if all security keys and salts have proper values.</td>
+      <td><p>Security keys are used to ensure better encryption of information stored in the user's cookies and hashed passwords. You don't have to remember these keys. In fact once you set them you'll never see them again. Therefore there's no excuse for not setting them properly.</p>
+      <p>Security keys (there are eight) are defined in <i>wp-config.php</i> as constants on lines #45-52. They should be as unique and as long as possible. WordPress made a <a href="https://api.wordpress.org/secret-key/1.1/salt/">great script</a> which helps you generate those strings. Please use it! After the script generates strings those 8 lines of code should look something like this:</p>
+      <pre>define('AUTH_KEY',         '}D4@p&lt;0VFKb*pdhM8c&lt;bb:qB%Fr8:- dc}U(,[K?hobrzsn*:r?,e^/eHsm6nHls');
+define('SECURE_AUTH_KEY',  'M2wEPuf7.%FWW1xvy]ar&amp;vy3gj,:1Go&gt;qs7d_N)nX}O[-(+AaDsiPbvAOdLG~dt}');
+define('LOGGED_IN_KEY',    'iA#+3)Xhf0E*oyN1A4#:0wVp|d&lt;F-rQQ Sf_HNMk,rVj,F,GdKF|b-:xBEM,y(,f');
+define('NONCE_KEY',        'ctGmyOSSfm1-WR/V:J6[;Zh|?a$slsWs_9BIKcM[}uh~+C|R}ylW4cU%D tIOG=d');
+define('AUTH_SALT',        '|@tYo .T&amp;-{wMmP&gt;ggj4p{,HKs!&gt;vsUXz/aPDlZ=1.D54m+#1xyt+%w)3r&amp;j]r?:');
+define('SECURE_AUTH_SALT', '`^mxb~AvK*Agn+h&gt;U!0GL2*2|R+HHyY%h1b%Aoo,Jy|M{}TP`mSTt&lt;fcm=O9`=bA');
+define('LOGGED_IN_SALT',   'Ow||n$:: HWM5%H7k+MW7{!Z[Z|G-UJZ6Pp8;Id^&lt;lK-&amp;W+}Q?wHw!xlp2g(1% w');
+define('NONCE_SALT',       'IoLWhDF-d&lt;&gt;`u}R4oEe5kXf+)&lt;.}Ib?BPE&lt;C9R=NQivhZ|8k^b@LhkpuqojnzdVI');
+
+</pre>
+      

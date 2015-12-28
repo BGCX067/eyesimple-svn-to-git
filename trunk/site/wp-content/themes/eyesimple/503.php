@@ -1,0 +1,1 @@
+<html><head>	<title>EYES | Simplicity is our motto</title></head><body>	<div style="width: 281px; margin: 100px auto;">		<img src="http://www.eyesimple.us/construction/construction.png" />	</div></body></html>

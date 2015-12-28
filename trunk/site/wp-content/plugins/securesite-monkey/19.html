@@ -1,0 +1,7 @@
+</td>
+    </tr>
+    <tr>
+    <td id="upgrade_file_check">Check if <i>upgrade.php</i> file is accessible via HTTP on the default location</td>
+      <td><p>There have already been a couple of security issues regarding this file. Besides the security issue it's never a good idea to let people run any database upgrade scripts without your knowledge. This is a useful file but it should not be accessible on the default location.</p>
+      <p>This is a very easy problem to solve. Rename <i>upgrade.php</i> (you'll find it in the <i>wp-admin</i> folder) to something more unique like "upgrade-876.php"; move it to another location or chmod it so it's not accessible via HTTP. Don't delete it! You may need it later on.</p>
+      

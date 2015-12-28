@@ -1,0 +1,9 @@
+</td>
+    </tr>
+
+    <tr>
+    <td id="file_editor">Check if plugins/themes file editor is enabled.</td>
+      <td><p>Plugins and themes file editor is a very convenient tool because it enables you to make quick changes without the need to use FTP. Unfortunately it's also a security issue because it not only shows PHP source but it also enables the attacker to inject malicious code in your site if he manages to gain access to the admin.</p>
+      <p>Editor can easily be disabled by placing the following code in theme's <i>functions.php</i> file.</p>
+      <pre>define('DISALLOW_FILE_EDIT', true);</pre>
+      

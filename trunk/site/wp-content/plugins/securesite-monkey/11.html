@@ -1,0 +1,8 @@
+</td>
+    </tr>
+    <tr>
+    <td id="db_table_prefix_check">Check if database table prefix is the default one (<i>wp_</i>).</td>
+      <td><p>Knowing the names of your database tables can help an attacker dump the table's data and get to sensitive information like password hashes. Since WP table names are predefined the only way you can change table names is by using a unique prefix. One that's different from "wp_" or any similar variation such as "wordpress_".</p>
+      <p>If you're doing a fresh installation defining a unique table prefix is easy. Open <i>wp-config.php</i> and go to line #61 where the table prefix is defined. Enter something unique like "frog99_" and install WP.</p>
+      <p>If you already have WP site running and want to change the table prefix things are a bit more complicated and you should only do the change if you're comfortable doing some changes to your DB data via phpMyAdmin or a similar GUI. Detailed 6-step instruction can be found on <a href="http://tdot-blog.com/wordpress/6-simple-steps-to-change-your-table-prefix-in-wordpress">Tdot blog</a>. <b>Remember</b> - always backup your files and database before making any changes to the database!</p>
+      

@@ -1,0 +1,10 @@
+</td>
+    </tr>
+    <tr>
+    <td id="db_password_check">Test the strength of WordPress database password.</td>
+      <td><p>There is no such thing as an "unimportant password"! The same goes for WordPress database password. Although most servers are configured so that the database can't be accessed from other hosts that doesn't mean your database passsword should be "12345". Choose a proper password, at least 8 characters long with a combination of letters, numbers and special characters.</p>
+
+      <p>To change the database password open cPanel, Plesk or some other hosting control panel you have. Find the option to change the database password and be sure you make the new password strong enough. If you can't find that option or you're uncomfortable changing it contact your hosting provider. After the password is changed open wp<i>-config.php</i> and change the password on line #25:</p>
+      <pre>/** MySQL database password */
+define('DB_PASSWORD', 'YOUR_NEW_DB_PASSWORD_GOES_HERE');</pre>
+      

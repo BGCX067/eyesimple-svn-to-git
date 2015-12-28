@@ -1,0 +1,12 @@
+</td>
+    </tr>
+
+        <tr>
+    <td id="allow_url_include_check">Check if <i>allow_url_include</i> PHP directive is turned off.</td>
+      <td><p>Having this PHP directive will leave your site exposed to cross-site attacks (XSS). There's absolutely no valid reason to enable this directive and using any PHP code that requires it is very risky.</p>
+      <p>If you have access to php.ini file locate</p>
+      <pre>allow_url_include = on</pre>
+      <p>and change it to:</p>
+      <pre>allow_url_include = off</pre>
+      <p>If you're still unable to disable <i>allow_url_include</i> contact a security professional immediately!</p>
+      

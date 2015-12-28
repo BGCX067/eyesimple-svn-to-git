@@ -1,0 +1,13 @@
+</td>
+    </tr>
+
+    <tr>
+    <td id="config_chmod">Check if <i>wp-config.php</i> file has the right permissions (chmod) set.</td>
+      <td><p><i>wp-config.php</i> file contains sensitive information (database username and password) in plain text and should not be accessible to anyone except you and WP (or the web server to be more precise).</p>
+      <p>What's the best chmod for your <i>wp-config.php</i> depends on the way your server is configured but there are some general guidelines you can follow. If you're hosting on a Windows based server ignore all of the following.</p>
+      <ul>
+      <li>try setting chmod to 0400 or 0440 and if the site works normally that's the best one to use</li>
+      <li>"other" users should have no privileges on the file so set the last octal digit to zero</li>
+      <li>"group" users shouldn't have any access right as well unless Apache falls under that category, so set group rights to 0 or 4</li>
+      </ul>
+      

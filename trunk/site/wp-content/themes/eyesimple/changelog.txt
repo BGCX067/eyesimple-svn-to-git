@@ -1,0 +1,5 @@
+*** Blox Changelog ***
+
+03 Oct 2012 - Version 1.0
+
+	First Release
